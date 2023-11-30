@@ -9,3 +9,4 @@ class Window:
 		self.screen = pygame.display.set_mode((self.width, self.height))
 
 
+window = Window()
