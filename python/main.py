@@ -1,5 +1,9 @@
 from game.window import window
+from objects.rect import Rect
 import pygame
+
+
+red_cube = Rect(x=100, y=250, width=50, height=50, colour=(255, 0, 0), gravity=0.5, xvel=0, yvel=0, grounded=False)
 
 
 class Main:
@@ -14,5 +18,7 @@ while running:
 			running = False
 
 	window.screen.fill(window.colour)
+
+	red_cube.draw(screen=window.screen)
 
 	pygame.display.flip()

@@ -15,6 +15,6 @@ class Rect:
 		self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
 
 
-	def draw(self, screen, colour, x, y, width, height):
+	def draw(self, screen):
 		self.rect = pygame.Rect(self.x, self.y, self.width, self.height)
-		pygame.draw.rect(screen, colour, (x, y, width, height))
+		pygame.draw.rect(screen, self.colour, (self.x, self.y, self.width, self.height))
