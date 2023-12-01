@@ -4,6 +4,7 @@ import pygame
 
 
 red_cube = Rect(x=100, y=250, width=50, height=50, colour=(255, 0, 0), gravity=0.5, xvel=0, yvel=0, grounded=False)
+floor = Rect(x=0, y=450, width=500, height=50, colour=(0, 0, 0), gravity=0, xvel=0, yvel=0, grounded=True)
 
 
 class Main:
